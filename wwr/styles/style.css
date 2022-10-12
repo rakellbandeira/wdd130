@@ -1,25 +1,61 @@
+*{
+    text-decoration: none;
+    
+}
+
+a{
+    color: #083D77;
+}
+
+a:hover{
+    color: white;
+
+ }
+
+p{
+    text-decoration: none;
+    color: #083D77;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 
+.logo{
+    width: 80px;
+}
+
+.icon{
+    width: 80px;
+}
+
 .nav a {
     text-align: center;
-    color: black;
+    color: #083D77;
+    text-decoration: none;
 }
 
 
 .nav a:hover {
     background-color: bisque;
-    color: black;
+    color: #083D77;
 }
 
 .home-title{
-    color: blue;
+    color: #083D77;
 }
 
 h4{
-color: red;
+color: black;
+}
+
+#hero {
+    background-color: beige;
+}
+
+#hero-img{
+    width: 100%;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -36,49 +72,60 @@ main section {
 
 #background {
     height: 725px;
-    background-color: beige;
+    background-color:#083D77;
 }
 
 body {
-    background-color: azure;
+    background-color: white;
 }
 
 header {
-    background-color: antiquewhite;
+    background-color: #EE964B;
 }
 
 
 .book, .join {
-    background-color: aquamarine;
-    color: blueviolet;
+    background-color: #EE964B;
+    color: white;
+    text-decoration: none;
 }
 
 .book:hover, .join:hover {
     background-color: black;
-    color: orange;
+    color: #EE964B;
 }
 
 .msg {
-    background-color: blueviolet;
+    background-color: #EBEBD3;
 }
 
 .msg h2 {
-    color:cornflowerblue;
+    color: #083D77;
 }
 
 .msg p {
-    color:darkgreen;
+    color:#083D77;
 }
 
 footer {
-    background-color: blueviolet;
-    color: darkmagenta;
+    background-color: #EE964B;
+    color: #083D77;
 }
 
 footer a {
-    color:crimson;
+    color:#083D77;
+    text-decoration: none;
 }
 
 footer a:hover{
-    color: ;
+    color: white;
+    text-decoration: none;
 }
+
+footer p{
+    font-size: 1.23em;
+}
+
+footer p a:hover {
+    text-decoration: none;
+} 
