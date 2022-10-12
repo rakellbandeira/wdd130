@@ -5,6 +5,21 @@
 
 .nav a {
     text-align: center;
+    color: black;
+}
+
+
+.nav a:hover {
+    background-color: bisque;
+    color: black;
+}
+
+.home-title{
+    color: blue;
+}
+
+h4{
+color: red;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -32,22 +47,38 @@ header {
     background-color: antiquewhite;
 }
 
-.nav a:hover {
-    background-color: bisque;
-}
 
 .book, .join {
     background-color: aquamarine;
+    color: blueviolet;
 }
 
 .book:hover, .join:hover {
     background-color: black;
+    color: orange;
 }
 
 .msg {
     background-color: blueviolet;
 }
 
+.msg h2 {
+    color:cornflowerblue;
+}
+
+.msg p {
+    color:darkgreen;
+}
+
 footer {
     background-color: blueviolet;
+    color: darkmagenta;
+}
+
+footer a {
+    color:crimson;
+}
+
+footer a:hover{
+    color: ;
 }
