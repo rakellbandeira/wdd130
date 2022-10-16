@@ -1,6 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300;400;700&family=Open+Sans:wght@300;700&display=swap');
+
 *{
     text-decoration: none;
     
+}
+
+body{
+    background-color: white;
+    font-family: "Open Sans", Helvetica, sans-serif ;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.font-title{
+    font-family: "Mali", sans-serif ;
 }
 
 a{
@@ -26,39 +40,63 @@ p{
     width: 80px;
 }
 
+#logo-link{
+    padding-top: 5px;
+}
+
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 
-.nav a {
-    text-align: center;
+
+nav a {
     color: #083D77;
     text-decoration: none;
+    padding: 35px;
+
 }
 
 
-.nav a:hover {
+nav a:hover {
     background-color: bisque;
     color: #083D77;
 }
 
-.home-title{
+.home-grid{
     color: #083D77;
+    font-size: 2em;
+    margin-top: 10px;
+    border: 1px solid red;
+
+}
+
+h2{
+    margin: 0;
 }
 
 h4{
-color: black;
+    color: black;
 }
 
 #hero {
     background-color: beige;
 }
 
-#hero-img{
+#hero img {
     width: 100%;
 }
 
-#hero-msg h1, #hero-msg h4 {
+#hero-msg{
+    padding-bottom: 57px;
+
+}
+
+#hero-msg h1 {
+    text-align: center;
+}
+
+#hero-msg h4 {
     text-align: center;
 }
 
@@ -70,13 +108,13 @@ main section {
     text-align: center;
 }
 
+main section img{
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
     background-color:#083D77;
-}
-
-body {
-    background-color: white;
 }
 
 header {
@@ -88,6 +126,10 @@ header {
     background-color: #EE964B;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -95,8 +137,18 @@ header {
     color: #EE964B;
 }
 
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+.card-img{
+    border: 10px solid #d9c2a3;
+}
+
 .msg {
     background-color: #EBEBD3;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
@@ -105,11 +157,19 @@ header {
 
 .msg p {
     color:#083D77;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer {
     background-color: #EE964B;
     color: #083D77;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer, .social img{
+    padding-top: 15px;
 }
 
 footer a {
