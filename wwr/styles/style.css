@@ -13,6 +13,27 @@ body{
     padding: 0;
 }
 
+
+header {
+    display: grid;
+    grid-template-columns: 300px auto;
+    font-size: 20px;
+}
+             
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+             
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+             
+
 .font-title{
     font-family: "Mali", sans-serif ;
 }
@@ -29,6 +50,26 @@ a:hover{
 p{
     text-decoration: none;
     color: #083D77;
+}
+
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+    color: white;
+    
+}
+             
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg h4 {
+    color: white;
 }
 
 #content {
@@ -67,9 +108,13 @@ nav a:hover {
     color: #083D77;
     font-size: 2em;
     margin-top: 10px;
-    border: 1px solid red;
+/*     border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+
 
 }
+
 
 h2{
     margin: 0;
@@ -80,25 +125,55 @@ h4{
 }
 
 #hero {
-    background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+
 }
 
 #hero img {
     width: 100%;
 }
 
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
 #hero-msg{
-    padding-bottom: 57px;
+/*     padding-bottom: 57px; */
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 200px;
 
 }
 
 #hero-msg h1 {
     text-align: center;
+    font-family: "Mali", sans-serif;
+    font-size: 3em;
+    margin-bottom: -10px;
 }
 
 #hero-msg h4 {
+    color: white;
     text-align: center;
+    font-size: 1.2em;
+
 }
+
+.card-img, .mountains {
+    width: 100%;
+}
+     
+.mountains {
+    grid-column: 2/7;
+    width: 100%;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
 
 .button-box {
     text-align: center;
@@ -108,6 +183,10 @@ main section {
     text-align: center;
 }
 
+main section h2{
+    font-size: 0.8em;
+}
+
 main section img{
     box-sizing: border-box;
 }
@@ -115,6 +194,8 @@ main section img{
 #background {
     height: 725px;
     background-color:#083D77;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
 
 header {
@@ -126,7 +207,7 @@ header {
     background-color: #EE964B;
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
@@ -141,14 +222,38 @@ header {
     margin: 200px 0;
 }
 
+.rivers-card{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.camping-card{
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.rapids-card{
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
 .card-img{
     border: 10px solid #d9c2a3;
+    
+
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+
 }
 
 .msg {
     background-color: #EBEBD3;
-    line-height: 1.5em;
+    line-height: 0.9em;
     padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .msg h2 {
@@ -157,15 +262,19 @@ header {
 
 .msg p {
     color:#083D77;
-    font-size: .8em;
+    font-size: .4em;
     padding-bottom: 15px;
 }
 
 footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #EE964B;
     color: #083D77;
     padding: 25px 50px;
     margin-top: 200px;
+    
 }
 
 footer, .social img{
@@ -183,9 +292,74 @@ footer a:hover{
 }
 
 footer p{
-    font-size: 1.23em;
+    font-size: 1em;
 }
 
 footer p a:hover {
     text-decoration: none;
 } 
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    header a {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav, footer {
+        flex-direction: column;
+   
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+
+    #hero-msg h1{
+        font-size: 0.8em;
+        margin-bottom: 40px;
+
+    }
+
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 20px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
