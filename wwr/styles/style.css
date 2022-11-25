@@ -23,8 +23,36 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-around;
 }
+
+.topnav{
+    overflow: hidden;
+    margin-top: 58px;
+/*     height: 30px; */
+}
+
+.topnav a {
+    float: left;
+    height: 42px;
+    color:  #083D77;
+    text-align: center;
+    padding: 10px 20px 0 20px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 2px 0 2px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: bisque;
+    color: #083D77;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: bisque;
+    color: #083D77;
+  }
              
 
 #logo_link {
@@ -52,6 +80,7 @@ p{
     color: #083D77;
 }
 
+/* Style for homepage body */
 
 #hero {
     display: grid;
@@ -88,20 +117,6 @@ p{
 .icon{
     width: 80px;
     padding-top: 10px;
-}
-
-
-nav a {
-    color: #083D77;
-    text-decoration: none;
-    padding: 35px;
-
-}
-
-
-nav a:hover {
-    background-color: bisque;
-    color: #083D77;
 }
 
 .home-grid{
@@ -152,14 +167,17 @@ h4{
 #hero-msg h1 {
     text-align: center;
     font-family: "Mali", sans-serif;
-    font-size: 3em;
+    font-size: 5em;
     margin-bottom: -10px;
+    margin-top: 6px;
 }
 
 #hero-msg h4 {
     color: white;
+    text-shadow: 2px 2px 5px black;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.8em;
+    margin-top: 30px;
 
 }
 
@@ -300,7 +318,71 @@ footer p a:hover {
 } 
 
 
+/* Start Destination Styling */
 
+.main-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+/*     grid-template-columns: repeat(9 1fr); */
+/*     grid-gap: 10px; */
+}
+.main-title{
+    grid-column: 2/9;
+    margin-top: 68px;
+}
+
+.main-title h1{
+    font-size: 32px;
+}
+
+.main-section{
+    grid-column: 2/9;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+.box-section{
+    display: flex;
+}
+
+.box-img{
+    float: left;
+    width: 500px;
+    margin: 0 30px 20px 0;
+}
+
+.box-section-1{
+    float: left;
+    width: 70%;
+}
+
+.box-section-1 h2{
+    text-align: left;
+    font-size: 20px;
+}
+
+.box-section-1 p{
+    text-align: justify;
+    font-size: 17px;
+}
+
+.box-section-2{
+    float: right;
+    width: 25%;
+    margin-left: 60px;
+}
+
+.box-section-2 h2{
+    text-align: left;
+    font-size: 20px;
+}
+
+.box-section-2 p{
+    text-align: left;
+    font-size: 17px;
+}
 
 
 @media screen and (max-width: 900px) {
@@ -332,12 +414,6 @@ footer p a:hover {
     }
     #hero-msg {
         margin-top: 0;
-    }
-
-    #hero-msg h1{
-        font-size: 0.8em;
-        margin-bottom: 40px;
-
     }
 
     #hero-msg h4 {
